@@ -34,5 +34,5 @@ def delete(request):
         record = todo.objects.get(id = idto)
         record.delete()
 
-        return redirect("http://127.0.0.1:8000")
+        return redirect('home')
 
