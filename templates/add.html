@@ -32,7 +32,7 @@
 </head>
 <body>
     <h1>Todo List</h1>
-    <form action="http://127.0.0.1:8000/" method="post">
+    <form action="{% url 'home'%}" method="post">
         <div>
             {% csrf_token %}
         <label for="title">Enter Title :-</label>
